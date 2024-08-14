@@ -1,0 +1,145 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F2E4D8;
+  
+}
+
+.recipe-main {
+  background-color: white;
+  padding: 25px;
+  min-width: 300px;
+  max-width: 682px;
+  box-sizing: border-box;
+  margin: 50px auto;
+  border-radius: 20px;
+}
+
+@media (max-width: 783px) {
+  .recipe-main {
+    margin-left: clamp(30px, 5%, 50px); /* Limits the shrinking */
+    margin-right: clamp(30px, 5%, 50px); /* Limits the shrinking */
+  }
+  
+}
+
+@media (max-width: 390px) {
+  .recipe-main {
+    margin: 0px;
+  }
+  body {
+    background-color: white;
+  }
+}
+
+
+
+.recipe-main img {
+  border-radius: 20px;
+  width: 100%;
+}
+
+.recipe-main h1,
+.recipe-main h2 {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: hsl(14, 45%, 36%);
+}
+.recipe-main p,
+li {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 180;
+  font-style: normal;
+  font-size: 16px;
+}
+
+.prep-span {
+  display: inline-block;
+  font-family: "Outfit", sans-serif;
+  padding-bottom: 10px;
+  margin-left: -18px;
+  font-weight: 600;
+  color: hsl(332, 51%, 32%);
+  
+}
+
+.prep-time {
+  background-color: #FFF7FC;
+  padding-left: 43px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  border-radius: 20px;
+  margin-top: 29px;
+}
+
+::marker {
+  font-size: 10px;
+}
+
+li {
+  padding-top: 5px;
+  padding-left: 17px;
+}
+
+li span {
+  font-weight: 400;
+}
+
+ul, ol {
+  padding-left: 20px; 
+}
+
+ul {
+  list-style-type: square; 
+
+}
+
+ol {
+  margin-bottom: 31px;
+}
+
+hr {
+  height: 1px;
+  border: none;
+  background-color: #F2E4D8;
+}
+
+.instructions li::marker {
+  color: hsl(14, 45%, 36%);
+  font-size: 15px;
+  font-weight: bold; 
+}
+
+.group div:nth-child(2) {
+  font-family: "Outfit", sans-serif;
+
+  font-weight: bold;
+  margin-right: 41%;
+  color: hsl(14, 45%, 36%);
+  text-align: left;
+  width: 50px;
+}
+
+.group div:nth-child(1) {
+  font-family: "Outfit", sans-serif;
+  font-weight: 200;
+}
+
+
+.group {
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  padding-left: 38px;
+}
+
+.ingredients {
+  padding-bottom: 12px;
+}
+
+.row-one {
+  padding-top: 10px;
+}
